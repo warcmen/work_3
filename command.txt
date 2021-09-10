@@ -1,0 +1,35 @@
+  225  git config --global user.name "Murad"
+  226  git config --global user.email murad0592@mail.ru
+  227  git init
+  228  echo "hello, world" >> one_file.txt
+  229  git add .
+  230  git commit -m "com1"
+  231  git status
+  232  git branch rating
+  233  git checkout rating
+  234  echo "my new rating" >> one_file.txt
+  235  git add .
+  236  git commit -m "com2"
+  237  git status
+  238  git checkout master
+  239  git branch comment
+  240  git checkout comment
+  241  echo "my new rating" >> one_file.txt
+  242  git rm one_file.txt
+  243  git rm -f one_file.txt
+  244  echo "comment was added" >> one_file.txt
+  245  git status
+  246  git add one_file.txt
+  247  git status
+  248  git commit -m "com3"
+  249  git status
+  250  git checkout master
+  251  git merge rating
+  252  git merge comment
+  253  git merge rating
+  254  git add .
+  255  git status
+  256  git commit -m "com4"
+  257  git status
+  258  gitk
+  259  history
